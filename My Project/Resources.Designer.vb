@@ -93,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property aptListBackBtn1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("aptListBackBtn1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property aptListBg() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("aptListBg", resourceCulture)
@@ -123,6 +133,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property aptListNextBtn1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("aptListNextBtn1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property aptsCom1Bg() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("aptsCom1Bg", resourceCulture)
@@ -146,6 +166,16 @@ Namespace My.Resources
         Friend ReadOnly Property aptSearchbtn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("aptSearchbtn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

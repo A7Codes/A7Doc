@@ -44,9 +44,18 @@ Partial Class Appointments
         Me.aptLblPhoneAdd = New System.Windows.Forms.TextBox()
         Me.aptLblDateAdd = New System.Windows.Forms.TextBox()
         Me.aptLblTimeAdd = New System.Windows.Forms.TextBox()
+        Me.aptLblDatTodayBg = New System.Windows.Forms.PictureBox()
+        Me.aptLblDatToday = New System.Windows.Forms.Label()
+        Me.aptLblDatNxt = New System.Windows.Forms.PictureBox()
+        Me.aptLblDatPrv = New System.Windows.Forms.PictureBox()
+        Me.AptBtnEdit = New System.Windows.Forms.Button()
+        Me.AptBtnDelete = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.aptLblDatTodayBg, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.aptLblDatNxt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.aptLblDatPrv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -55,7 +64,7 @@ Partial Class Appointments
         Me.PictureBox2.Image = Global.A7Doc.My.Resources.Resources.aptsCom1Bg
         Me.PictureBox2.Location = New System.Drawing.Point(670, 332)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(771, 630)
+        Me.PictureBox2.Size = New System.Drawing.Size(905, 630)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -275,7 +284,7 @@ Partial Class Appointments
         Me.AptBtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AptBtnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AptBtnAdd.ForeColor = System.Drawing.Color.White
-        Me.AptBtnAdd.Location = New System.Drawing.Point(759, 986)
+        Me.AptBtnAdd.Location = New System.Drawing.Point(670, 986)
         Me.AptBtnAdd.Name = "AptBtnAdd"
         Me.AptBtnAdd.Size = New System.Drawing.Size(175, 60)
         Me.AptBtnAdd.TabIndex = 8
@@ -330,6 +339,81 @@ Partial Class Appointments
         Me.aptLblTimeAdd.TabIndex = 9
         Me.aptLblTimeAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'aptLblDatTodayBg
+        '
+        Me.aptLblDatTodayBg.Image = Global.A7Doc.My.Resources.Resources.dashbtnbg
+        Me.aptLblDatTodayBg.Location = New System.Drawing.Point(129, 153)
+        Me.aptLblDatTodayBg.Name = "aptLblDatTodayBg"
+        Me.aptLblDatTodayBg.Size = New System.Drawing.Size(220, 60)
+        Me.aptLblDatTodayBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.aptLblDatTodayBg.TabIndex = 10
+        Me.aptLblDatTodayBg.TabStop = False
+        '
+        'aptLblDatToday
+        '
+        Me.aptLblDatToday.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.aptLblDatToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.aptLblDatToday.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aptLblDatToday.ForeColor = System.Drawing.Color.White
+        Me.aptLblDatToday.Location = New System.Drawing.Point(145, 160)
+        Me.aptLblDatToday.Name = "aptLblDatToday"
+        Me.aptLblDatToday.Size = New System.Drawing.Size(163, 38)
+        Me.aptLblDatToday.TabIndex = 11
+        Me.aptLblDatToday.Text = "Label1"
+        Me.aptLblDatToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'aptLblDatNxt
+        '
+        Me.aptLblDatNxt.Image = Global.A7Doc.My.Resources.Resources.aptListNextBtn1
+        Me.aptLblDatNxt.Location = New System.Drawing.Point(355, 153)
+        Me.aptLblDatNxt.Name = "aptLblDatNxt"
+        Me.aptLblDatNxt.Size = New System.Drawing.Size(60, 60)
+        Me.aptLblDatNxt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.aptLblDatNxt.TabIndex = 12
+        Me.aptLblDatNxt.TabStop = False
+        '
+        'aptLblDatPrv
+        '
+        Me.aptLblDatPrv.Image = Global.A7Doc.My.Resources.Resources.aptListBackBtn1
+        Me.aptLblDatPrv.Location = New System.Drawing.Point(49, 153)
+        Me.aptLblDatPrv.Name = "aptLblDatPrv"
+        Me.aptLblDatPrv.Size = New System.Drawing.Size(60, 60)
+        Me.aptLblDatPrv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.aptLblDatPrv.TabIndex = 12
+        Me.aptLblDatPrv.TabStop = False
+        '
+        'AptBtnEdit
+        '
+        Me.AptBtnEdit.BackColor = System.Drawing.Color.Transparent
+        Me.AptBtnEdit.BackgroundImage = Global.A7Doc.My.Resources.Resources.dashbtnbg
+        Me.AptBtnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.AptBtnEdit.FlatAppearance.BorderSize = 0
+        Me.AptBtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AptBtnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AptBtnEdit.ForeColor = System.Drawing.Color.White
+        Me.AptBtnEdit.Location = New System.Drawing.Point(1034, 986)
+        Me.AptBtnEdit.Name = "AptBtnEdit"
+        Me.AptBtnEdit.Size = New System.Drawing.Size(175, 60)
+        Me.AptBtnEdit.TabIndex = 8
+        Me.AptBtnEdit.Text = "EDIT"
+        Me.AptBtnEdit.UseVisualStyleBackColor = False
+        '
+        'AptBtnDelete
+        '
+        Me.AptBtnDelete.BackColor = System.Drawing.Color.Transparent
+        Me.AptBtnDelete.BackgroundImage = Global.A7Doc.My.Resources.Resources.dashbtnbg
+        Me.AptBtnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.AptBtnDelete.FlatAppearance.BorderSize = 0
+        Me.AptBtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AptBtnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AptBtnDelete.ForeColor = System.Drawing.Color.White
+        Me.AptBtnDelete.Location = New System.Drawing.Point(1400, 986)
+        Me.AptBtnDelete.Name = "AptBtnDelete"
+        Me.AptBtnDelete.Size = New System.Drawing.Size(175, 60)
+        Me.AptBtnDelete.TabIndex = 8
+        Me.AptBtnDelete.Text = "DELETE"
+        Me.AptBtnDelete.UseVisualStyleBackColor = False
+        '
         'Appointments
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -339,10 +423,16 @@ Partial Class Appointments
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
         Me.ControlBox = False
+        Me.Controls.Add(Me.aptLblDatPrv)
+        Me.Controls.Add(Me.aptLblDatNxt)
+        Me.Controls.Add(Me.aptLblDatToday)
+        Me.Controls.Add(Me.aptLblDatTodayBg)
         Me.Controls.Add(Me.aptLblTimeAdd)
         Me.Controls.Add(Me.aptLblDateAdd)
         Me.Controls.Add(Me.aptLblPhoneAdd)
         Me.Controls.Add(Me.aptLblNameAdd)
+        Me.Controls.Add(Me.AptBtnDelete)
+        Me.Controls.Add(Me.AptBtnEdit)
         Me.Controls.Add(Me.AptBtnAdd)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.aptLblTimeT)
@@ -368,6 +458,9 @@ Partial Class Appointments
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.aptLblDatTodayBg, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.aptLblDatNxt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.aptLblDatPrv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -395,4 +488,10 @@ Partial Class Appointments
     Friend WithEvents aptLblPhoneAdd As TextBox
     Friend WithEvents aptLblDateAdd As TextBox
     Friend WithEvents aptLblTimeAdd As TextBox
+    Friend WithEvents aptLblDatTodayBg As PictureBox
+    Friend WithEvents aptLblDatToday As Label
+    Friend WithEvents aptLblDatNxt As PictureBox
+    Friend WithEvents aptLblDatPrv As PictureBox
+    Friend WithEvents AptBtnEdit As Button
+    Friend WithEvents AptBtnDelete As Button
 End Class

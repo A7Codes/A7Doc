@@ -13,9 +13,7 @@
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         posDashItems()
-
     End Sub
 
     Private Sub Dashboard_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -33,6 +31,17 @@
 
     End Function
 
+    Private Sub DashBtnPats_Click(sender As Object, e As EventArgs) Handles DashBtnPats.Click
 
+        Form1.CurForm = Patient
+        Dim Panel1 = Form1.Panel1
+        Panel1.Controls.Clear()
+        Patient.TopLevel = False
+        Panel1.Controls.Add(Patient)
+        Patient.Show()
+        Panel1.Size = Me.Size
+        Patient.Size = Panel1.Size
+
+    End Sub
 
 End Class

@@ -27,11 +27,11 @@ Public Class Form1
 
 
         Panel1.Controls.Clear()
-        Dashboard.TopLevel = False
-        Panel1.Controls.Add(Dashboard)
-        Dashboard.Show()
+        Splash.TopLevel = False
+        Panel1.Controls.Add(Splash)
+        Splash.Show()
         Panel1.Size = Me.Size
-        Dashboard.Size = Panel1.Size
+        Splash.Size = Panel1.Size
 
     End Sub
 
