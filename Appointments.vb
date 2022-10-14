@@ -15,11 +15,13 @@ Public Class Appointments
 
     Private Sub Appointments_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+        positionItems()
         aptLblDatToday.Text = Date.Now.ToString("dd/MM/yyyy")
         today = Date.Now.ToString("dd/MM/yyyy").Split("/")
 
         colorize()
-        positionItems()
+
         readDB()
 
         aptLblNameAdd.Hide()

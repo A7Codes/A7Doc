@@ -59,7 +59,7 @@ Partial Class Patient
         Me.patLblName.ForeColor = System.Drawing.Color.White
         Me.patLblName.Location = New System.Drawing.Point(823, 446)
         Me.patLblName.Name = "patLblName"
-        Me.patLblName.Size = New System.Drawing.Size(159, 47)
+        Me.patLblName.Size = New System.Drawing.Size(173, 47)
         Me.patLblName.TabIndex = 1
         Me.patLblName.Text = "Name"
         Me.patLblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -71,7 +71,7 @@ Partial Class Patient
         Me.patLblPhone.ForeColor = System.Drawing.Color.White
         Me.patLblPhone.Location = New System.Drawing.Point(823, 613)
         Me.patLblPhone.Name = "patLblPhone"
-        Me.patLblPhone.Size = New System.Drawing.Size(159, 47)
+        Me.patLblPhone.Size = New System.Drawing.Size(173, 47)
         Me.patLblPhone.TabIndex = 1
         Me.patLblPhone.Text = "Phone"
         Me.patLblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -83,7 +83,7 @@ Partial Class Patient
         Me.patLblAddress.ForeColor = System.Drawing.Color.White
         Me.patLblAddress.Location = New System.Drawing.Point(823, 786)
         Me.patLblAddress.Name = "patLblAddress"
-        Me.patLblAddress.Size = New System.Drawing.Size(159, 47)
+        Me.patLblAddress.Size = New System.Drawing.Size(173, 47)
         Me.patLblAddress.TabIndex = 1
         Me.patLblAddress.Text = "Address"
         Me.patLblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -93,9 +93,9 @@ Partial Class Patient
         Me.patLblNameV.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.patLblNameV.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.patLblNameV.ForeColor = System.Drawing.Color.White
-        Me.patLblNameV.Location = New System.Drawing.Point(1042, 446)
+        Me.patLblNameV.Location = New System.Drawing.Point(1002, 446)
         Me.patLblNameV.Name = "patLblNameV"
-        Me.patLblNameV.Size = New System.Drawing.Size(140, 47)
+        Me.patLblNameV.Size = New System.Drawing.Size(180, 47)
         Me.patLblNameV.TabIndex = 2
         Me.patLblNameV.Text = "NA"
         Me.patLblNameV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -107,7 +107,7 @@ Partial Class Patient
         Me.patLblPhoneV.ForeColor = System.Drawing.Color.White
         Me.patLblPhoneV.Location = New System.Drawing.Point(1042, 613)
         Me.patLblPhoneV.Name = "patLblPhoneV"
-        Me.patLblPhoneV.Size = New System.Drawing.Size(140, 47)
+        Me.patLblPhoneV.Size = New System.Drawing.Size(180, 47)
         Me.patLblPhoneV.TabIndex = 2
         Me.patLblPhoneV.Text = "PH"
         Me.patLblPhoneV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -119,7 +119,7 @@ Partial Class Patient
         Me.patLblAddressV.ForeColor = System.Drawing.Color.White
         Me.patLblAddressV.Location = New System.Drawing.Point(1042, 786)
         Me.patLblAddressV.Name = "patLblAddressV"
-        Me.patLblAddressV.Size = New System.Drawing.Size(140, 47)
+        Me.patLblAddressV.Size = New System.Drawing.Size(180, 47)
         Me.patLblAddressV.TabIndex = 2
         Me.patLblAddressV.Text = "AD"
         Me.patLblAddressV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
