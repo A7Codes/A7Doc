@@ -38,6 +38,7 @@ Partial Class Patient
         Me.PatBtnDelete = New System.Windows.Forms.Button()
         Me.PatBtnEdit = New System.Windows.Forms.Button()
         Me.PatBtnAdd = New System.Windows.Forms.Button()
+        Me.patBackBtn = New System.Windows.Forms.Button()
         CType(Me.patDetailsBG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.patSearchBG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -97,7 +98,7 @@ Partial Class Patient
         Me.patLblNameV.Name = "patLblNameV"
         Me.patLblNameV.Size = New System.Drawing.Size(180, 47)
         Me.patLblNameV.TabIndex = 2
-        Me.patLblNameV.Text = "NA"
+        Me.patLblNameV.Text = "NAME"
         Me.patLblNameV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'patLblPhoneV
@@ -109,7 +110,7 @@ Partial Class Patient
         Me.patLblPhoneV.Name = "patLblPhoneV"
         Me.patLblPhoneV.Size = New System.Drawing.Size(180, 47)
         Me.patLblPhoneV.TabIndex = 2
-        Me.patLblPhoneV.Text = "PH"
+        Me.patLblPhoneV.Text = "PHONE"
         Me.patLblPhoneV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'patLblAddressV
@@ -121,7 +122,7 @@ Partial Class Patient
         Me.patLblAddressV.Name = "patLblAddressV"
         Me.patLblAddressV.Size = New System.Drawing.Size(180, 47)
         Me.patLblAddressV.TabIndex = 2
-        Me.patLblAddressV.Text = "AD"
+        Me.patLblAddressV.Text = "ADDRESS"
         Me.patLblAddressV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'patLblNameTB
@@ -233,6 +234,22 @@ Partial Class Patient
         Me.PatBtnAdd.Text = "ADD"
         Me.PatBtnAdd.UseVisualStyleBackColor = False
         '
+        'patBackBtn
+        '
+        Me.patBackBtn.BackColor = System.Drawing.Color.Transparent
+        Me.patBackBtn.BackgroundImage = Global.A7Doc.My.Resources.Resources.dashbtnbg
+        Me.patBackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.patBackBtn.FlatAppearance.BorderSize = 0
+        Me.patBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.patBackBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.patBackBtn.ForeColor = System.Drawing.Color.White
+        Me.patBackBtn.Location = New System.Drawing.Point(12, 12)
+        Me.patBackBtn.Name = "patBackBtn"
+        Me.patBackBtn.Size = New System.Drawing.Size(147, 60)
+        Me.patBackBtn.TabIndex = 12
+        Me.patBackBtn.Text = "Back"
+        Me.patBackBtn.UseVisualStyleBackColor = False
+        '
         'Patient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -240,6 +257,7 @@ Partial Class Patient
         Me.BackgroundImage = Global.A7Doc.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1902, 1033)
+        Me.Controls.Add(Me.patBackBtn)
         Me.Controls.Add(Me.PatBtnDelete)
         Me.Controls.Add(Me.PatBtnEdit)
         Me.Controls.Add(Me.PatBtnAdd)
@@ -283,4 +301,5 @@ Partial Class Patient
     Friend WithEvents PatBtnDelete As Button
     Friend WithEvents PatBtnEdit As Button
     Friend WithEvents PatBtnAdd As Button
+    Friend WithEvents patBackBtn As Button
 End Class

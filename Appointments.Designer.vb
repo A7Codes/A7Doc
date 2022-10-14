@@ -216,9 +216,9 @@ Partial Class Appointments
         Me.aptLblNameV.ForeColor = System.Drawing.Color.White
         Me.aptLblNameV.Location = New System.Drawing.Point(977, 542)
         Me.aptLblNameV.Name = "aptLblNameV"
-        Me.aptLblNameV.Size = New System.Drawing.Size(54, 39)
+        Me.aptLblNameV.Size = New System.Drawing.Size(120, 39)
         Me.aptLblNameV.TabIndex = 6
-        Me.aptLblNameV.Text = "ID"
+        Me.aptLblNameV.Text = "NAME"
         '
         'aptLblPhoneV
         '
@@ -229,9 +229,9 @@ Partial Class Appointments
         Me.aptLblPhoneV.ForeColor = System.Drawing.Color.White
         Me.aptLblPhoneV.Location = New System.Drawing.Point(977, 647)
         Me.aptLblPhoneV.Name = "aptLblPhoneV"
-        Me.aptLblPhoneV.Size = New System.Drawing.Size(54, 39)
+        Me.aptLblPhoneV.Size = New System.Drawing.Size(144, 39)
         Me.aptLblPhoneV.TabIndex = 6
-        Me.aptLblPhoneV.Text = "ID"
+        Me.aptLblPhoneV.Text = "PHONE"
         '
         'aptLblDateV
         '
@@ -242,9 +242,9 @@ Partial Class Appointments
         Me.aptLblDateV.ForeColor = System.Drawing.Color.White
         Me.aptLblDateV.Location = New System.Drawing.Point(977, 752)
         Me.aptLblDateV.Name = "aptLblDateV"
-        Me.aptLblDateV.Size = New System.Drawing.Size(54, 39)
+        Me.aptLblDateV.Size = New System.Drawing.Size(113, 39)
         Me.aptLblDateV.TabIndex = 6
-        Me.aptLblDateV.Text = "ID"
+        Me.aptLblDateV.Text = "DATE"
         '
         'aptLblTimeV
         '
@@ -255,9 +255,9 @@ Partial Class Appointments
         Me.aptLblTimeV.ForeColor = System.Drawing.Color.White
         Me.aptLblTimeV.Location = New System.Drawing.Point(977, 857)
         Me.aptLblTimeV.Name = "aptLblTimeV"
-        Me.aptLblTimeV.Size = New System.Drawing.Size(54, 39)
+        Me.aptLblTimeV.Size = New System.Drawing.Size(103, 39)
         Me.aptLblTimeV.TabIndex = 6
-        Me.aptLblTimeV.Text = "ID"
+        Me.aptLblTimeV.Text = "TIME"
         '
         'Button1
         '

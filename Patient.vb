@@ -111,6 +111,7 @@ Public Class Patient
             PatBtnAdd.Text = "ADD"
 
             addBtnTaps = 0
+            MessageBox.Show("Done")
 
         End If
 
@@ -146,6 +147,7 @@ Public Class Patient
             showVs()
             hideTB()
 
+            MessageBox.Show("Done")
         End If
 
     End Sub
@@ -154,6 +156,8 @@ Public Class Patient
 
         Dim tmpPat = New Pat(patLblNameV.Text, patLblPhoneV.Text, patLblAddressV.Text)
         client.Delete("pats/" + tmpPat.phone)
+
+        MessageBox.Show("Done")
 
     End Sub
 
@@ -195,4 +199,14 @@ Public Class Patient
 
     End Function
 
+    Private Sub patBackBtn_Click(sender As Object, e As EventArgs) Handles patBackBtn.Click
+        Form1.CurForm = Dashboard
+        Dim Panel1 = Form1.Panel1
+        Panel1.Controls.Clear()
+        Dashboard.TopLevel = False
+        Panel1.Controls.Add(Dashboard)
+        Dashboard.Show()
+        Panel1.Size = Me.Size
+        Dashboard.Size = Panel1.Size
+    End Sub
 End Class

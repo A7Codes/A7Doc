@@ -327,6 +327,8 @@ Public Class Appointments
 
             AptBtnAdd.Text = "ADD"
 
+            MessageBox.Show("Done")
+
         End If
 
 
@@ -426,7 +428,10 @@ Public Class Appointments
 
             AptBtnEdit.Text = "EDIT"
 
+            MessageBox.Show("Done")
+
             EditTapped = 0
+
         End If
 
     End Sub
@@ -440,6 +445,7 @@ Public Class Appointments
         aptSorted.Clear()
         ListBox1.Items.Clear()
         readDB()
+        MessageBox.Show("Done")
 
     End Sub
 End Class
